@@ -2,41 +2,57 @@
 html {
     scroll-behavior: smooth;
   }
+
+html a {
+    color: white;
+}  
 /*nav start*/
 body {
     font-family:Poppins;
     margin:0 5px;
 }
 
-.header {
+header {
+   height:60px;
+   background:#3a3633;
+}
+
+.topbanner {
+    position:fixed;
+    width:100%;
     display:flex;
     justify-content:space-between;
+    align-items: center;;
     background: #3a3633;
     list-style-type: none;
-    padding: 0 5px;
     font-family:Poppins;
-
 }
-
 
 .logo img {
-    padding-left: 15px;
+    height:50px;
     width:50px;
+    align-items: center;
+    padding-top:5px;
+    padding-left:15px;
+}
+
+.dropdownmenu img {
+    height:30px;
+    width:30px;
+    align-items: center;
+    padding-top:5px;
+    padding-right:15px;
 }
   
-.dropdown img {
-    width:40px;
-    padding-right:15px;
-    padding-top: 5px;;
-
+.dropdownmenu {
+    width:60px;
+    height:40px;
 }
 
-.dropdown ul {
-    display:flex;
-    margin:0;
-  }
-
   .dropdown-content {
+    width:100%;
+    padding:0px 0;
+    text-align:center;
     position: absolute;
     right:0;
     display:none;
@@ -45,7 +61,7 @@ body {
     
   }
 
-  .dropdown-li:hover .dropdown-content{
+  .dropdown-li:hover .dropdown-content {
     display:block;
     position:fixed;
     width:100%;
@@ -58,16 +74,17 @@ body {
   }
   
 
-  .dropdown-content--item {
-  display:none;
+  .dropdown-content-item {  
+  color:white;   
+  padding:10px 0; 
   width:100%;
-  padding:10px 15px;
   font-size:18px;
   }
   
-  .dropdown-content-item:hover {
-    background-color:lightgrey;
+  .dropdown-content-item:hover {  
+    background: lightgrey
     }
+  
 /*nav ends*/    
 
 /*falcon9 starts*/
@@ -193,8 +210,8 @@ padding: 30px 0
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -3vh 32vw;
-  border:3px solid white;
+  margin: -6vh 32vw;
+  border:5px solid white;
 }
 
 .overlaytext {
@@ -364,34 +381,32 @@ form button {
 
 @media only screen and (min-width: 768px) {
 /*nav starts*/
-        .dropdown img{
-            display:none;
-        }
+.dropdownmenu {
+display:none;
+}
 
-        .dropdown-content {
-            display:flex;
-            color:white;
-            justify-content: space-between;
-            padding:10px 10px;
-        }
+.dropdown-content {
+    display:flex;
+    justify-content: space-between;
+    text-align: right;
+    width:550px;
+    right:3vh;
+    top:1vh;
+}
 
-        .dropdown-li:hover {
-            display:none;
-        }
-        
-        .dropdown-content-item {
-            padding:10px 15px;
-        }
+.dropdown-content-item {
+    padding:10px;
+    text-align: center;
+}
 
-        ul {
-            display:flex;
-        }
+
+
 /*nav ends*/
 
 /*falcon9 starts*/
 .sectionfalcon {
     border:0;
-    background: url(/Users/fx/Documents/code/project-m1-htmlcss/imgs/tesla.jpg) no-repeat center center;
+    background: url(/Users/fx/Documents/code/project-m1-htmlcss/imgs/bg.jpg) no-repeat center center;
     background-size: cover;
     padding: 150px 150px;
     }
@@ -464,28 +479,31 @@ form button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -3vh 5vw;
+    margin: -6vh 5vw;
     border:3px solid white;
   }
 /*random ends*/
 
 /*gallery starts*/
 .sectiongallery {
-    margin:0 auto;
-    width:100%
+    margin:0
 }
 
 .galleryrow {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width:100%;
-    height:auto;
+    height:100%
 
+}
+
+.gallerybundle {
+    width:33.3%;
+    height:50%
 }
 
 .gallerybundle img {
     width:100%;
+    height:250px;
 
 }
 
